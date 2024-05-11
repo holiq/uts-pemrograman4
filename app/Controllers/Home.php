@@ -2,10 +2,15 @@
 
 namespace App\Controllers;
 
+use CodeIgniter\HTTP\RedirectResponse;
+
 class Home extends BaseController
 {
-    public function index(): string
+    public function index(): RedirectResponse | string
     {
-        return view('welcome_message');
+        if (!session()->get('name')) {
+            return redirect()->route('Login::index');
+        }
+        return view('home');
     }
 }
