@@ -58,6 +58,12 @@
                                 </a>
                             </li>
                             <li class="sidebar-item">
+                                <a href="<?= route_to('Jabatan::index') ?>" class='sidebar-link'>
+                                    <i class="bi bi-grid-fill"></i>
+                                    <span>Jabatan</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
                                 <a href="<?= route_to('Login::destroy') ?>" class='sidebar-link text-danger'>
                                     <i class="bi bi-box-arrow-right"></i>
                                     <span>Logout</span>
@@ -96,7 +102,7 @@
                 const method = document.createElement('input');
                 method.type = 'hidden';
                 method.name = '_method';
-                method.value = 'delete';
+                method.value = 'DELETE';
                 form.appendChild(method);
 
                 document.body.appendChild(form);
