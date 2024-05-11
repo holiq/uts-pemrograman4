@@ -34,11 +34,11 @@ class Login extends BaseController
         $check = $this->admin->where('username', $data['username'])->first();
 
         if ($check) {
-            if (password_verify($data['password'], $check['password'])) {
-                session()->set('name', $check['name']);
-                session()->set('username', $check['username']);
+            if (password_verify($data['password'], $check->password)) {
+                session()->set('name', $check->name);
+                session()->set('username', $check->username);
 
-                return redirect()->route('Home::index')->with('message', 'Selamat datang ' . $data['username']);
+                return redirect()->route('Home::index')->with('message', 'Selamat datang ' . $check->username);
             }
         }
 
