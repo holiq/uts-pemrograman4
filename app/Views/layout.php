@@ -70,6 +70,12 @@
                                 </a>
                             </li>
                             <li class="sidebar-item">
+                                <a href="<?= route_to('Tugas::index') ?>" class='sidebar-link'>
+                                    <i class="bi bi-grid-fill"></i>
+                                    <span>Tugas</span>
+                                </a>
+                            </li>
+                            <li class="sidebar-item">
                                 <a href="<?= route_to('Login::destroy') ?>" class='sidebar-link text-danger'>
                                     <i class="bi bi-box-arrow-right"></i>
                                     <span>Logout</span>
