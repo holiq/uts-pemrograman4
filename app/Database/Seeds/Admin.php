@@ -13,6 +13,11 @@ class Admin extends Seeder
                 'name' => 'Holiq Ibrahim',
                 'username' => 'holiq',
                 'password' => password_hash('11111111', PASSWORD_DEFAULT)
+            ],
+            [
+                'name' => 'John Doe',
+                'username' => 'admin',
+                'password' => password_hash('admin123', PASSWORD_DEFAULT)
             ]
         ]);
     }

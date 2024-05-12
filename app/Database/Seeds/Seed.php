@@ -10,5 +10,6 @@ class Seed extends Seeder
     {
         $this->call(Admin::class);
         $this->call(Jabatan::class);
+        $this->call(Anggota::class);
     }
 }
