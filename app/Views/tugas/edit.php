@@ -38,7 +38,7 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="jabatan_id">Tugas</label>
+                            <label for="jabatan_id">Jabatan</label>
                             <select name="jabatan_id" id="jabatan_id" class="form-control">
                                 <option value="">--Pilih--</option>
                                 <?php foreach ($jabatan as $row) : ?>
